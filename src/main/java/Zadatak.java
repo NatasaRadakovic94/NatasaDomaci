@@ -51,5 +51,7 @@ public class Zadatak {
         fileOut.close();
         System.out.println();
     }
+    String ime = "Natasa";
+        System.out.println(ime);
 }
 }
