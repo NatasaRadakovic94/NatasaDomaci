@@ -27,7 +27,7 @@ public class Zadatak {
 
 
     Faker faker = new Faker();
-    for (int i = 5; i < 10; i++) {
+    for (int i = 5; i < 11; i++) {
         // Create a new row
         Row row = sheet.createRow(i);
         // Create a new cell
@@ -38,7 +38,7 @@ public class Zadatak {
         lastNameCell.setCellValue(faker.name().lastName());
     }
 
-    for (int i = 5; i < 10; i++) {
+    for (int i = 5; i < 11; i++) {
         XSSFRow row = sheet.getRow(i);
         XSSFCell cell = row.getCell(0);
         XSSFCell cell2 = row.getCell(1);
@@ -51,7 +51,5 @@ public class Zadatak {
         fileOut.close();
         System.out.println();
     }
-    String ime = "Natasa";
-        System.out.println(ime);
 }
 }
